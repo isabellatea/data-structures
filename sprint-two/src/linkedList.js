@@ -4,13 +4,13 @@ var LinkedList = function() {
   list.tail = null;
 
   list.addToTail = function(value) {
-    var newNode =  new Node(value);
+    var newNode = new Node(value);
     var currentTail = list.tail;
     if (currentTail) {
       currentTail.next = newNode;
     }
     list.tail = newNode;
-    if(!list.head) {
+    if (!list.head) {
       list.head = newNode;
     }
   };
