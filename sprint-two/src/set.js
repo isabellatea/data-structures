@@ -29,6 +29,6 @@ setPrototype.remove = function(item) {
  */
 //.add: amortized O(1) constant
 //.contains: O(n) linear
-//.remove: O(n) linear 
+//.remove: O(n) linear
 
 
