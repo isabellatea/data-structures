@@ -52,4 +52,9 @@ describe('linkedList', function() {
   });
 
   // add more tests here to test the functionality of linkedList
+  it('**should use an object to implement the new node', function() {
+    var toTest = new Node();
+    expect(typeof toTest === 'object').to.equal(true);
+  });
+
 });

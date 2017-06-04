@@ -8,6 +8,10 @@ var BinarySearchTree = function(val) {
 
 
 BinarySearchTree.prototype.insert = function(val) {
+  if (typeof val !== "number") {
+    return 'Input not a number';
+  }
+
   if (val < this.value && !this.left) {
     this.left = BinarySearchTree(val);
   }
